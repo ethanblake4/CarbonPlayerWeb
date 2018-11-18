@@ -1,0 +1,32 @@
+{
+  "name": "carbonplayerweb",
+  "version": "0.0.1",
+  "platform": "PlatformWeb",
+  "scripts": {
+    "clean": "react-native-clean-project",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "browserify": "^16.2.3",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.1",
+    "react-native": "^0.56.1",
+    "react-native-cli": "^2.0.1",
+    "rxjs": "^5.5.11"
+  },
+  "devDependencies": {
+    "babel-jest": "23.4.2",
+    "babel-preset-react-native": "^5",
+    "jest": "23.4.2",
+    "react-native-clean-project": "^3.0.0",
+    "react-test-renderer": "16.4.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "description": "New ReactJava Project Configuration",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
+}

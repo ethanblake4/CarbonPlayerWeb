@@ -1,0 +1,36 @@
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.8.2//EN" "http://gwtproject.org/doctype/2.8.0/gwt-module.dtd">
+<module rename-to="CarbonPlayerWeb">
+
+	<inherits name="com.google.web.bindery.autobean.AutoBean"/>
+	<inherits name="com.googlecode.gwt.crypto.Crypto"/>
+
+	<!-- ==================================================== -->
+	<!-- Start of ReactJava Application Module Boilerplate    -->
+	<!-- Inherit the ReactJava module                         -->
+   <inherits name='ReactJava'/>
+
+
+	<!-- transcode the generated code database                -->
+	<source path="generated" />
+
+   <!-- Use generators to create the code database           -->
+   <!-- omitting this will typically generate a rebind error -->
+   <!-- on compilation of the GWT.create() invocation        -->
+   <!-- in React.getReactJavaCodeGenerator()                 -->
+   <generate-with class="io.reactjava.codegenerator.ReactCodeGenerator">
+     <when-type-assignable class="io.reactjava.client.gwt.react.IReactCodeGenerator" />
+   </generate-with>
+
+	<!-- End of ReactJava Application Module Boilerplate      -->
+	<!-- ==================================================== -->
+	<!-- Application specific entries below here...           -->
+
+	<!-- transcode the application sources                    -->
+	<source path="carbonplayerweb" />
+
+	<!-- Specify the app entry point class.                   -->
+	<entry-point class='carbonplayerweb.App'/>
+
+	<!-- Combine all platform-specific versions                -->
+	<collapse-all-properties />
+</module>

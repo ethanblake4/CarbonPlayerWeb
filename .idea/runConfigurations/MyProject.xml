@@ -1,0 +1,15 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="CarbonPlayerWeb" type="GWT.ConfigurationType" factoryName="GWT Configuration">
+    <option name="VM_PARAMETERS" value="-DgeneratorLogLevel=TRACE" />
+    <option name="SHELL_PARAMETERS" value="-generateJsInteropExports -style DETAILED -logLevel TRACE" />
+    <option name="RUN_PAGE" value="CarbonPlayerWeb.html" />
+    <option name="START_JAVASCRIPT_DEBUGGER" value="true" />
+    <option name="USE_SUPER_DEV_MODE" value="true" />
+    <option name="WORKING_DIRECTORY" value="" />
+    <module name="CarbonPlayerWeb" />
+    <method v="2">
+      <option name="AntTarget" enabled="true" antfile="file://$MODULE_DIR$/antbuildreactjava.xml" target="assignPlatformWeb" />
+      <option name="MakeProject" enabled="true" />
+    </method>
+  </configuration>
+</component>

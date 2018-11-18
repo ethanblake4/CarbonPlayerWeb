@@ -1,0 +1,33 @@
+<project default="assignPlatformWeb">
+   <!-- not logging
+   <record name="antlog.txt"/>
+   -->
+   <record name="antlog.txt"/>
+   <target name="assignPlatformWeb">
+      <java classname="io.reactjava.codegenerator.JavascriptBundler">
+         <arg value="PlatformWeb"/>
+         <classpath>
+            <pathelement location="war/WEB-INF/lib/reactjava.jar"/>
+            <pathelement path="${java.class.path}"/>
+         </classpath>
+      </java>
+   </target>
+   <target name="assignPlatformIOS">
+      <java classname="io.reactjava.codegenerator.JavascriptBundler">
+         <arg value="PlatformIOS"/>
+         <classpath>
+            <pathelement location="war/WEB-INF/lib/reactjava.jar"/>
+            <pathelement path="${java.class.path}"/>
+         </classpath>
+      </java>
+   </target>
+   <target name="createGWTLibrary">
+      <java classname="io.reactjava.codegenerator.JavascriptBundler">
+         <arg value="CreateGWTLibrary"/>
+         <classpath>
+            <pathelement location="war/WEB-INF/lib/reactjava.jar"/>
+            <pathelement path="${java.class.path}"/>
+         </classpath>
+      </java>
+   </target>
+</project>
